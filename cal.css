@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    color: #6cacc5;
+    background: #100a1c;
+    background-image:
+    radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+    radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+    background-attachment: fixed;
+    color: #6cacc5;
+    font: 300 18px/1.6 "Source Sans Pro",sans-serif;
+    margin: 0;
+    padding: 1em 0 1em;
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    margin-top: 25px;
+}
+
+h1 {
+    font-weight: 300;
+    margin: 0;
+}
+
+.warning {
+    background: -webkit-linear-gradient(45deg,  #c97874 10%, #463042 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #8c5059;
+    font-weight: 400;
+    margin: 0 auto 6em;
+    max-width: 9em;
+}
+
+.calculator {
+    font-size: 28px;
+    margin: 0 auto;
+    width: 10em;
+}
+
+.broken {
+    animation: broken 2s;
+    transform: translate3d(0,-2000px,0);
+    opacity: 0;
+}
+
+.viewer {
+    color: #c97874;
+    float: left;
+    line-height: 3em;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 7.5em;
+    height: 3em;
+}
+
+button {
+    border: 0;
+    background: rgba(42,50,113, .28);
+    color: #6cacc5;
+    cursor: pointer;
+    float: left;
+    font: inherit;
+    margin: 0.25em;
+    width: 2em;
+    height: 2em;
+    transition: all 0.5s;
+}
+
+.reset {
+    background: rgba(201,120,116,.28);
+    color:#c97874;
+    font-weight: 400;
+    margin-left: -77px;
+    padding: 0.5em 1em;
+    position: absolute;
+    top: -20em;
+    left: 50%;
+    width: auto;
+    height: auto;
+}
+
+@keyframes broken {
+  0% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+
+  5% {
+    transform: rotate(5deg);
+  }
+
+  15% {
+    transform: rotate(-5deg);
+  }
+
+  20% {
+    transform: rotate(5deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(45deg);
+  }
+
+  70% {
+    transform: translate3d(0,2000px,0);
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0,-2000px,0);
+  }
+}
+
+footer {
+    padding-top: 300px;
+    color: #f3f3f3;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: center;
+    color: grey;
+    font-size: 15px;
+    margin-top: 70px;
+    margin-bottom: 0.5%;
+}
