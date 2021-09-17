@@ -1,2 +1,10 @@
-# calculator
-Add Style and JS for calculator
+# Calculator
+
+= HTML, CSS, & JavaScript;
+= Note: Don't Divide By Zero;
+
+
+
+
+
+=> live: https://mo-calculator.netlify.app/
